@@ -1,0 +1,13 @@
+ssid: <some_software_statement_id>
+organisation_id: <some_organisation_id>
+ssa: <some_software_statement_header>.<some_software_statement_payload>.<some_software_statement_signature>
+kid: <some_kid>
+client_id: <some_client_id>
+request_object_signing_alg: PS256
+encryption_private: testdata/keys/encryption_private.key
+encryption_public: testdata/keys/encryption_public.pem
+signature_private: testdata/keys/signature_private.key
+signature_public: testdata/keys/signature_public.pem
+transport_private: testdata/keys/transport_private.key
+transport_public: testdata/keys/transport_public.pem
+register_response: testdata/register_response.json

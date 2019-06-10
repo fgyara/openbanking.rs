@@ -1,0 +1,29 @@
+[package]
+name = "openbanking"
+version = "0.1.0"
+authors = ["mbana <m@bana.io>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hyper = "0.12"
+hyper-tls = "0.3.2"
+futures = "0.1.26"
+tokio = "0.1.20"
+tokio-rustls = "0.9"
+hyper-rustls = "0.16.1"
+rustls = "0.15.2"
+
+reqwest = { version = "0.9.18", features = ["rustls-tls"] }
+
+bytes = "0.4"
+
+env_logger = "0.5"
+log = { version = "0.4", features = ["std", "serde"] }
+# log = { version = "0.4", features = ["max_level_debug", "release_max_level_warn"] }
+
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.8"
+serde_json = "1.0"
+
